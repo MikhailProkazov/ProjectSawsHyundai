@@ -23,11 +23,7 @@ def test_search_saws():
     search_saws.input_hyundai_saw()
     time.sleep(5)
     print("Открылся список бензопил")
+    time.sleep(5)
 
-    # hyundai_saws = Main_page(driver)
-    # hyundai_saws.click_hyundai_saws()
-    # time.sleep(3)
-    # print("Открылись все бензопилы Hyundai")
-    # time.sleep(5)
 
 
