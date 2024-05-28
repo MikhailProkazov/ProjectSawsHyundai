@@ -1,9 +1,17 @@
+import datetime
+from pydantic import BaseModel
+# from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from base.base_class import Base
 
-class HS_page(Base):
+
+class Saws(Base):
+
+    # saws_model: str
+    # saws_price: int
+    # saws_power: int
 
     url = 'https://krasnodar.220-volt.ru/?digiSearch=true&term=%D0%B1%D0%B5%D0%BD%D0%B7%D0%BE%D0%BF%D0%B8%D0%BB%D0%B0%20hyundai&params=%7Csort%3DDEFAULT'
 
@@ -15,7 +23,6 @@ class HS_page(Base):
     saw_4 = "(//div[@class='digi-product__label'])[7]"
     saw_5 = "(//div[@class='digi-product__label'])[9]"
     saw_6 = "(//div[@class='digi-product__label'])[11]"
-    saw_7 = "(//div[@class='digi-product__label'])[13]"
 
     # Getters
 
@@ -36,9 +43,6 @@ class HS_page(Base):
 
     def get_saw_6(self):
         return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.saw_6)))
-
-    def get_saw_7(self):
-        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.saw_7)))
 
     # Actions
 
@@ -66,11 +70,6 @@ class HS_page(Base):
         self.get_saw_6().click()
         print("Клик saw_6")
 
-    def click_saw_7(self):
-        self.get_saw_7().click()
-        print("Клик saw_7")
-
-
     # Methods
 
     def change_saw_1(self):
@@ -78,3 +77,5 @@ class HS_page(Base):
 
     def change_saw_2(self):
         self.click_saw_2()
+
+

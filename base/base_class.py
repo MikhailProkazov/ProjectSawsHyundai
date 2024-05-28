@@ -13,14 +13,6 @@ class Base():
         print("Current URL: " + get_url)
 
 
-    """Method assert word (проверка, подверждения перехода на заданную страницу)"""
-
-    def assert_word(self, word, result):
-        value_word = word.text
-        assert value_word == result
-        print("Good value word")
-
-
     """Method screenshot (создание скриншотов)"""
 
     def get_screenshot(self):
@@ -34,3 +26,7 @@ class Base():
         get_url = self.driver.current_url
         assert get_url == result
         print("Good URL! Finish! ")
+
+
+
+
