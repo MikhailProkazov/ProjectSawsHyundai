@@ -1,10 +1,10 @@
 import time
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
+from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from pages.main_page import Main_page
 from pages.hyundai_saws_page import Saws
-
 
 options = webdriver.ChromeOptions()
 options.page_load_strategy = 'eager'
@@ -26,10 +26,21 @@ def test_search_saws():
     print("Открылся список бензопил")
     time.sleep(2)
 
-
     """Сбор информации для первого товара"""
 
     change_hyundai_saw_1 = Saws(driver)
     change_hyundai_saw_1.change_saw_1()
     print("Выбрали первый товар из предложенных")
     time.sleep(5)
+
+    s1_model = driver.find_element(By.XPATH, "//h1[@class='head-1 card-main-title']")  # локатор модели первого товара
+    val_s1_model = s1_model.text
+    s1_model_in_excel = val_s1_model[9:]
+    print(s1_model_in_excel)
+    s1_price = driver.find_element(By.XPATH, "//span[@class='text-lg']")        #локатор цены первого товара
+    val_s1_price = s1_price.text
+    print(val_s1_price)
+    s1_power = driver.find_element(By.XPATH, "(//p[@class='text-sm text-break'])[4]")  # локатор мощности первого товара
+    val_s1_power = s1_power.text
+    print(val_s1_power)
+
