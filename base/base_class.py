@@ -1,6 +1,7 @@
 import datetime
 
 
+
 class Base():
 
     def __init__(self, driver):
@@ -26,7 +27,4 @@ class Base():
         get_url = self.driver.current_url
         assert get_url == result
         print("Good URL! Finish! ")
-
-
-
 
