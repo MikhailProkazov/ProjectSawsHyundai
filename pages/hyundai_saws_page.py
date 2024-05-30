@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from base.base_class import Base
+from utilietes.logger import Logger
 
 
 class Saws(Base):
@@ -72,10 +73,38 @@ class Saws(Base):
 
     # Methods
 
+    def open_url_saws(self):
+        self.driver.get(self.url)
+        self.driver.maximize_window()
+
     def change_saw_1(self):
+        Logger.add_start_step(method='change_saw_1')
         self.click_saw_1()
+        Logger.add_end_step(url=self.driver.current_url, method='change_saw_1')
 
     def change_saw_2(self):
+        Logger.add_start_step(method='change_saw_2')
         self.click_saw_2()
+        Logger.add_end_step(url=self.driver.current_url, method='change_saw_2')
+
+    def change_saw_3(self):
+        Logger.add_start_step(method='change_saw_3')
+        self.click_saw_3()
+        Logger.add_end_step(url=self.driver.current_url, method='change_saw_3')
+
+    def change_saw_4(self):
+        Logger.add_start_step(method='change_saw_4')
+        self.click_saw_4()
+        Logger.add_end_step(url=self.driver.current_url, method='change_saw_4')
+
+    def change_saw_5(self):
+        Logger.add_start_step(method='change_saw_5')
+        self.click_saw_5()
+        Logger.add_end_step(url=self.driver.current_url, method='change_saw_5')
+
+    def change_saw_6(self):
+        Logger.add_start_step(method='change_saw_6')
+        self.click_saw_6()
+        Logger.add_end_step(url=self.driver.current_url, method='change_saw_6')
 
 

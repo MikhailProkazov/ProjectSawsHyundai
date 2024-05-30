@@ -1,0 +1,17 @@
+
+-----
+Test: tests/test_search_saws.py::test_search_saws (call)
+Start time: 2024-05-31 01:30:20.344236
+Start name method: open_url
+
+End time: 2024-05-31 01:30:26.385720
+End name method: open_url
+URL: https://krasnodar.220-volt.ru/
+
+-----
+
+-----
+Test: tests/test_search_saws.py::test_search_saws (call)
+Start time: 2024-05-31 01:30:31.418893
+Start name method: input_hyundai_saw
+
