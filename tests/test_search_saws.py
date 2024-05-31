@@ -6,17 +6,16 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 from pages.main_page import Main_page
 from pages.hyundai_saws_page import Saws
-from pydantic import BaseModel
+
 import pandas as pd
+
+from verifier_pydantic import Saws_Parameters
 
 options = webdriver.ChromeOptions()
 options.page_load_strategy = 'eager'
 
 
-# class Saws_Parameters(BaseModel):
-#     saw_model: str
-#     saw_price: int
-#     saw_power: str
+
 
 
 @allure.description('Test search saws')
@@ -54,12 +53,8 @@ def test_search_saws(set_up):
     val_s1_power = s1_power.text
     print(val_s1_power)
 
-    # saw_1_verif = Saws_Parameters(saw_model= s1_model.text, saw_price= s1_price.text, saw_power= s1_power.text)
-    # def ver_s1_model():
-    #     if type(s1_model.text) is str:
-    #         return True
-    # print(saw_1_verif)
-    # ver_s1_model()
+
+
 
     """Сбор информации для второго товара"""
 
