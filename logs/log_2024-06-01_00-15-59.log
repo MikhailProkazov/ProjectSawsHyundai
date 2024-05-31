@@ -1,0 +1,28 @@
+
+-----
+Test: tests/test_search_saws.py::test_search_saws (call)
+Start time: 2024-06-01 00:16:25.799151
+Start name method: open_url
+
+End time: 2024-06-01 00:16:39.354908
+End name method: open_url
+URL: https://krasnodar.220-volt.ru/
+
+-----
+
+-----
+Test: tests/test_search_saws.py::test_search_saws (call)
+Start time: 2024-06-01 00:16:44.494003
+Start name method: input_hyundai_saw
+
+End time: 2024-06-01 00:16:58.133831
+End name method: input_hyundai_saw
+URL: https://krasnodar.220-volt.ru/search/?q=%E1%E5%ED%E7%EE%EF%E8%EB%E0+Hyundai
+
+-----
+
+-----
+Test: tests/test_search_saws.py::test_search_saws (call)
+Start time: 2024-06-01 00:17:12.153307
+Start name method: change_saw_1
+
