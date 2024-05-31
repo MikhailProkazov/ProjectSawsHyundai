@@ -6,6 +6,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from base.base_class import Base
 from utilietes.logger import Logger
+import allure
 
 
 class Saws(Base):
@@ -74,37 +75,46 @@ class Saws(Base):
     # Methods
 
     def open_url_saws(self):
-        self.driver.get(self.url)
-        self.driver.maximize_window()
+        with allure.step("Open url saws"):
+            Logger.add_start_step(method='open_url_saws')
+            self.driver.get(self.url)
+            self.driver.maximize_window()
+            Logger.add_end_step(url=self.driver.current_url, method='open_url_saws')
 
     def change_saw_1(self):
-        Logger.add_start_step(method='change_saw_1')
-        self.click_saw_1()
-        Logger.add_end_step(url=self.driver.current_url, method='change_saw_1')
+        with allure.step("Change saw 1"):
+            Logger.add_start_step(method='change_saw_1')
+            self.click_saw_1()
+            Logger.add_end_step(url=self.driver.current_url, method='change_saw_1')
 
     def change_saw_2(self):
-        Logger.add_start_step(method='change_saw_2')
-        self.click_saw_2()
-        Logger.add_end_step(url=self.driver.current_url, method='change_saw_2')
+        with allure.step("Change saw 2"):
+            Logger.add_start_step(method='change_saw_2')
+            self.click_saw_2()
+            Logger.add_end_step(url=self.driver.current_url, method='change_saw_2')
 
     def change_saw_3(self):
-        Logger.add_start_step(method='change_saw_3')
-        self.click_saw_3()
-        Logger.add_end_step(url=self.driver.current_url, method='change_saw_3')
+        with allure.step("Change saw 3"):
+            Logger.add_start_step(method='change_saw_3')
+            self.click_saw_3()
+            Logger.add_end_step(url=self.driver.current_url, method='change_saw_3')
 
     def change_saw_4(self):
-        Logger.add_start_step(method='change_saw_4')
-        self.click_saw_4()
-        Logger.add_end_step(url=self.driver.current_url, method='change_saw_4')
+        with allure.step("Change saw 4"):
+            Logger.add_start_step(method='change_saw_4')
+            self.click_saw_4()
+            Logger.add_end_step(url=self.driver.current_url, method='change_saw_4')
 
     def change_saw_5(self):
-        Logger.add_start_step(method='change_saw_5')
-        self.click_saw_5()
-        Logger.add_end_step(url=self.driver.current_url, method='change_saw_5')
+        with allure.step("Change saw 5"):
+            Logger.add_start_step(method='change_saw_5')
+            self.click_saw_5()
+            Logger.add_end_step(url=self.driver.current_url, method='change_saw_5')
 
     def change_saw_6(self):
-        Logger.add_start_step(method='change_saw_6')
-        self.click_saw_6()
-        Logger.add_end_step(url=self.driver.current_url, method='change_saw_6')
+        with allure.step("Change saw 6"):
+            Logger.add_start_step(method='change_saw_6')
+            self.click_saw_6()
+            Logger.add_end_step(url=self.driver.current_url, method='change_saw_6')
 
 

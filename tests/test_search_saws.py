@@ -20,12 +20,12 @@ def test_search_saws(set_up):
     print("Старт теста по поиску бензопил марки Hyundai")
 
     mp = Main_page(driver)
-    mp.open_url()
+    mp.open_url()                       # step 1
     time.sleep(5)
     print("Открылся нужный нам сайт")
 
     search_saws = Main_page(driver)
-    search_saws.input_hyundai_saw()
+    search_saws.input_hyundai_saw()     # step 2
     time.sleep(7)
     print("Открылся список бензопил")
     time.sleep(7)
@@ -35,7 +35,7 @@ def test_search_saws(set_up):
     """Сбор информации для первого товара"""
 
     change_hyundai_saw_1 = Saws(driver)
-    change_hyundai_saw_1.change_saw_1()
+    change_hyundai_saw_1.change_saw_1()             # step 3
     print("Выбрали первый товар из предложенных")
     time.sleep(5)
 
@@ -54,12 +54,12 @@ def test_search_saws(set_up):
     """Сбор информации для второго товара"""
 
     hsp = Saws(driver)
-    hsp.open_url_saws()
+    hsp.open_url_saws()             # step 4
     time.sleep(5)
     print("Открылась страница с бензопилами фирмы Hyundai")
 
     change_hyundai_saw_2 = Saws(driver)
-    change_hyundai_saw_2.change_saw_2()
+    change_hyundai_saw_2.change_saw_2()         #step 5
     print("Выбрали второй товар из предложенных")
     # time.sleep(3)
 
@@ -78,12 +78,12 @@ def test_search_saws(set_up):
     """Сбор информации для третьего товара"""
 
     hsp = Saws(driver)
-    hsp.open_url_saws()
+    hsp.open_url_saws()             # step 6
     time.sleep(3)
     print("Открылась страница с бензопилами фирмы Hyundai")
 
     change_hyundai_saw_3 = Saws(driver)
-    change_hyundai_saw_3.change_saw_3()
+    change_hyundai_saw_3.change_saw_3()         # step 7
     print("Выбрали третий товар из предложенных")
     # time.sleep(3)
 
@@ -102,12 +102,12 @@ def test_search_saws(set_up):
     """Сбор информации для четвертого товара"""
 
     hsp = Saws(driver)
-    hsp.open_url_saws()
+    hsp.open_url_saws()         # step 8
     time.sleep(3)
     print("Открылась страница с бензопилами фирмы Hyundai")
 
     change_hyundai_saw_4 = Saws(driver)
-    change_hyundai_saw_4.change_saw_4()
+    change_hyundai_saw_4.change_saw_4()         # step 9
     print("Выбрали четвертый товар из предложенных")
     # time.sleep(3)
 
@@ -126,12 +126,12 @@ def test_search_saws(set_up):
     """Сбор информации для пятого товара"""
 
     hsp = Saws(driver)
-    hsp.open_url_saws()
+    hsp.open_url_saws()             # step 10
     time.sleep(3)
     print("Открылась страница с бензопилами фирмы Hyundai")
 
     change_hyundai_saw_5 = Saws(driver)
-    change_hyundai_saw_5.change_saw_5()
+    change_hyundai_saw_5.change_saw_5()             # step 11
     print("Выбрали пятый товар из предложенных")
     # time.sleep(3)
 
@@ -150,12 +150,12 @@ def test_search_saws(set_up):
     """Сбор информации для шестого товара"""
 
     hsp = Saws(driver)
-    hsp.open_url_saws()
+    hsp.open_url_saws()             # step 12
     time.sleep(3)
     print("Открылась страница с бензопилами фирмы Hyundai")
 
     change_hyundai_saw_6 = Saws(driver)
-    change_hyundai_saw_6.change_saw_6()
+    change_hyundai_saw_6.change_saw_6()             # step 13
     print("Выбрали шестой товар из предложенных")
     # time.sleep(3)
 
@@ -172,7 +172,7 @@ def test_search_saws(set_up):
 
 
 
-    df = pd.DataFrame(dict(
+    df = pd.DataFrame(dict(                         # step 14
         ID=['1', '2', '3', '4', '5', '6'],
         Model=[
             s1_model_in_excel[8:], s2_model_in_excel[8:],
