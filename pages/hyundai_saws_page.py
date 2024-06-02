@@ -11,9 +11,6 @@ import allure
 
 class Saws(Base):
 
-    # saws_model: str
-    # saws_price: int
-    # saws_power: int
 
     url = 'https://krasnodar.220-volt.ru/?digiSearch=true&term=%D0%B1%D0%B5%D0%BD%D0%B7%D0%BE%D0%BF%D0%B8%D0%BB%D0%B0%20hyundai&params=%7Csort%3DDEFAULT'
 
@@ -50,27 +47,27 @@ class Saws(Base):
 
     def click_saw_1(self):
         self.get_saw_1().click()
-        print("Клик saw_1")
+        print("Выбор первого товара")
 
     def click_saw_2(self):
         self.get_saw_2().click()
-        print("Клик saw_2")
+        print("Выбор второго товара")
 
     def click_saw_3(self):
         self.get_saw_3().click()
-        print("Клик saw_3")
+        print("Выбор третьего товара")
 
     def click_saw_4(self):
         self.get_saw_4().click()
-        print("Клик saw_4")
+        print("Выбор четвертого товара")
 
     def click_saw_5(self):
         self.get_saw_5().click()
-        print("Клик saw_5")
+        print("Выбор пятого товара")
 
     def click_saw_6(self):
         self.get_saw_6().click()
-        print("Клик saw_6")
+        print("Выбор шестого товара")
 
     # Methods
 

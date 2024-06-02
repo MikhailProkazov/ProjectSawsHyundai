@@ -1,0 +1,143 @@
+
+-----
+Test: tests/test_search_saws.py::test_search_saws (call)
+Start time: 2024-06-02 19:37:31.110890
+Start name method: open_url
+
+End time: 2024-06-02 19:37:42.326150
+End name method: open_url
+URL: https://krasnodar.220-volt.ru/
+
+-----
+
+-----
+Test: tests/test_search_saws.py::test_search_saws (call)
+Start time: 2024-06-02 19:37:47.331627
+Start name method: input_hyundai_saw
+
+End time: 2024-06-02 19:37:48.631709
+End name method: input_hyundai_saw
+URL: https://krasnodar.220-volt.ru/?digiSearch=true&term=%D0%B1%D0%B5%D0%BD%D0%B7%D0%BE%D0%BF%D0%B8%D0%BB%D0%B0%20Hyundai&params=%7Csort%3DDEFAULT
+
+-----
+
+-----
+Test: tests/test_search_saws.py::test_search_saws (call)
+Start time: 2024-06-02 19:37:53.648970
+Start name method: change_saw_1
+
+End time: 2024-06-02 19:37:56.694313
+End name method: change_saw_1
+URL: https://krasnodar.220-volt.ru/catalog-735228/
+
+-----
+
+-----
+Test: tests/test_search_saws.py::test_search_saws (call)
+Start time: 2024-06-02 19:38:02.046431
+Start name method: open_url_saws
+
+End time: 2024-06-02 19:38:04.559408
+End name method: open_url_saws
+URL: https://krasnodar.220-volt.ru/?digiSearch=true&term=%D0%B1%D0%B5%D0%BD%D0%B7%D0%BE%D0%BF%D0%B8%D0%BB%D0%B0%20hyundai&params=%7Csort%3DDEFAULT
+
+-----
+
+-----
+Test: tests/test_search_saws.py::test_search_saws (call)
+Start time: 2024-06-02 19:38:09.562298
+Start name method: change_saw_2
+
+End time: 2024-06-02 19:38:12.007955
+End name method: change_saw_2
+URL: https://krasnodar.220-volt.ru/catalog-735229/
+
+-----
+
+-----
+Test: tests/test_search_saws.py::test_search_saws (call)
+Start time: 2024-06-02 19:38:13.219831
+Start name method: open_url_saws
+
+End time: 2024-06-02 19:38:17.189407
+End name method: open_url_saws
+URL: https://krasnodar.220-volt.ru/?digiSearch=true&term=%D0%B1%D0%B5%D0%BD%D0%B7%D0%BE%D0%BF%D0%B8%D0%BB%D0%B0%20hyundai&params=%7Csort%3DDEFAULT
+
+-----
+
+-----
+Test: tests/test_search_saws.py::test_search_saws (call)
+Start time: 2024-06-02 19:38:20.190561
+Start name method: change_saw_3
+
+End time: 2024-06-02 19:38:22.608888
+End name method: change_saw_3
+URL: https://krasnodar.220-volt.ru/catalog-735227/
+
+-----
+
+-----
+Test: tests/test_search_saws.py::test_search_saws (call)
+Start time: 2024-06-02 19:38:24.018636
+Start name method: open_url_saws
+
+End time: 2024-06-02 19:38:26.895711
+End name method: open_url_saws
+URL: https://krasnodar.220-volt.ru/?digiSearch=true&term=%D0%B1%D0%B5%D0%BD%D0%B7%D0%BE%D0%BF%D0%B8%D0%BB%D0%B0%20hyundai&params=%7Csort%3DDEFAULT
+
+-----
+
+-----
+Test: tests/test_search_saws.py::test_search_saws (call)
+Start time: 2024-06-02 19:38:29.900164
+Start name method: change_saw_4
+
+End time: 2024-06-02 19:38:32.025875
+End name method: change_saw_4
+URL: https://krasnodar.220-volt.ru/catalog-697556/
+
+-----
+
+-----
+Test: tests/test_search_saws.py::test_search_saws (call)
+Start time: 2024-06-02 19:38:33.371723
+Start name method: open_url_saws
+
+End time: 2024-06-02 19:38:36.465389
+End name method: open_url_saws
+URL: https://krasnodar.220-volt.ru/?digiSearch=true&term=%D0%B1%D0%B5%D0%BD%D0%B7%D0%BE%D0%BF%D0%B8%D0%BB%D0%B0%20hyundai&params=%7Csort%3DDEFAULT
+
+-----
+
+-----
+Test: tests/test_search_saws.py::test_search_saws (call)
+Start time: 2024-06-02 19:38:39.487420
+Start name method: change_saw_5
+
+End time: 2024-06-02 19:38:42.017986
+End name method: change_saw_5
+URL: https://krasnodar.220-volt.ru/catalog-697554/
+
+-----
+
+-----
+Test: tests/test_search_saws.py::test_search_saws (call)
+Start time: 2024-06-02 19:38:42.215092
+Start name method: open_url_saws
+
+End time: 2024-06-02 19:38:45.158121
+End name method: open_url_saws
+URL: https://krasnodar.220-volt.ru/?digiSearch=true&term=%D0%B1%D0%B5%D0%BD%D0%B7%D0%BE%D0%BF%D0%B8%D0%BB%D0%B0%20hyundai&params=%7Csort%3DDEFAULT
+
+-----
+
+-----
+Test: tests/test_search_saws.py::test_search_saws (call)
+Start time: 2024-06-02 19:38:48.166586
+Start name method: change_saw_6
+
+End time: 2024-06-02 19:38:50.304052
+End name method: change_saw_6
+URL: https://krasnodar.220-volt.ru/catalog-697555/
+
+-----

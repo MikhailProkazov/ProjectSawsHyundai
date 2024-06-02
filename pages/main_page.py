@@ -1,4 +1,3 @@
-
 from selenium.webdriver import Keys
 import allure
 from selenium.webdriver.common.by import By

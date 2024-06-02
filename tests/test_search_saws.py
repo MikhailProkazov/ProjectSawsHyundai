@@ -16,8 +16,6 @@ options.page_load_strategy = 'eager'
 
 
 
-
-
 @allure.description('Test search saws')
 def test_search_saws(set_up):
     driver = webdriver.Chrome(options=options, service=ChromeService(ChromeDriverManager().install()))
@@ -25,22 +23,23 @@ def test_search_saws(set_up):
     print("Старт теста по поиску бензопил марки Hyundai")
 
     mp = Main_page(driver)
-    mp.open_url()  # step 1
+    mp.open_url()
     time.sleep(5)
     print("Открылся нужный нам сайт")
 
     search_saws = Main_page(driver)
-    search_saws.input_hyundai_saw()  # step 2
-    time.sleep(7)
+    search_saws.input_hyundai_saw()
+    time.sleep(5)
     print("Открылся список бензопил")
-    time.sleep(7)
+    # time.sleep(5)
 
     """Сбор информации для первого товара"""
 
     change_hyundai_saw_1 = Saws(driver)
-    change_hyundai_saw_1.change_saw_1()  # step 3
+    change_hyundai_saw_1.change_saw_1()
     print("Выбрали первый товар из предложенных")
     time.sleep(5)
+
 
     s1_model = driver.find_element(By.XPATH, "//h1[@class='head-1 card-main-title']")  # модель 1
     val_s1_model = s1_model.text
@@ -53,18 +52,22 @@ def test_search_saws(set_up):
     val_s1_power = s1_power.text
     print(val_s1_power)
 
+    saw_1_model_pydantic = Saws_Parameters(saw_model=s1_model_in_excel,
+                                           saw_price=val_s1_price,
+                                           saw_power=val_s1_power)
+    print(saw_1_model_pydantic)
 
 
 
     """Сбор информации для второго товара"""
 
     hsp = Saws(driver)
-    hsp.open_url_saws()  # step 4
+    hsp.open_url_saws()
     time.sleep(5)
     print("Открылась страница с бензопилами фирмы Hyundai")
 
     change_hyundai_saw_2 = Saws(driver)
-    change_hyundai_saw_2.change_saw_2()  # step 5
+    change_hyundai_saw_2.change_saw_2()
     print("Выбрали второй товар из предложенных")
     # time.sleep(3)
 
@@ -79,15 +82,20 @@ def test_search_saws(set_up):
     val_s2_power = s2_power.text
     print(val_s2_power)
 
+    saw_2_model_pydantic = Saws_Parameters(saw_model=s2_model_in_excel,
+                                           saw_price=val_s2_price,
+                                           saw_power=val_s2_power)
+    print(saw_2_model_pydantic)
+
     """Сбор информации для третьего товара"""
 
     hsp = Saws(driver)
-    hsp.open_url_saws()  # step 6
+    hsp.open_url_saws()
     time.sleep(3)
     print("Открылась страница с бензопилами фирмы Hyundai")
 
     change_hyundai_saw_3 = Saws(driver)
-    change_hyundai_saw_3.change_saw_3()  # step 7
+    change_hyundai_saw_3.change_saw_3()
     print("Выбрали третий товар из предложенных")
     # time.sleep(3)
 
@@ -102,15 +110,20 @@ def test_search_saws(set_up):
     val_s3_power = s3_power.text
     print(val_s3_power)
 
+    saw_3_model_pydantic = Saws_Parameters(saw_model=s3_model_in_excel,
+                                           saw_price=val_s3_price,
+                                           saw_power=val_s3_power)
+    print(saw_3_model_pydantic)
+
     """Сбор информации для четвертого товара"""
 
     hsp = Saws(driver)
-    hsp.open_url_saws()  # step 8
+    hsp.open_url_saws()
     time.sleep(3)
     print("Открылась страница с бензопилами фирмы Hyundai")
 
     change_hyundai_saw_4 = Saws(driver)
-    change_hyundai_saw_4.change_saw_4()  # step 9
+    change_hyundai_saw_4.change_saw_4()
     print("Выбрали четвертый товар из предложенных")
     # time.sleep(3)
 
@@ -125,15 +138,20 @@ def test_search_saws(set_up):
     val_s4_power = s4_power.text
     print(val_s4_power)
 
+    saw_4_model_pydantic = Saws_Parameters(saw_model=s4_model_in_excel,
+                                           saw_price=val_s4_price,
+                                           saw_power=val_s4_power)
+    print(saw_4_model_pydantic)
+
     """Сбор информации для пятого товара"""
 
     hsp = Saws(driver)
-    hsp.open_url_saws()  # step 10
+    hsp.open_url_saws()
     time.sleep(3)
     print("Открылась страница с бензопилами фирмы Hyundai")
 
     change_hyundai_saw_5 = Saws(driver)
-    change_hyundai_saw_5.change_saw_5()  # step 11
+    change_hyundai_saw_5.change_saw_5()
     print("Выбрали пятый товар из предложенных")
     # time.sleep(3)
 
@@ -148,15 +166,20 @@ def test_search_saws(set_up):
     val_s5_power = s5_power.text
     print(val_s5_power)
 
+    saw_5_model_pydantic = Saws_Parameters(saw_model=s5_model_in_excel,
+                                           saw_price=val_s5_price,
+                                           saw_power=val_s5_power)
+    print(saw_5_model_pydantic)
+
     """Сбор информации для шестого товара"""
 
     hsp = Saws(driver)
-    hsp.open_url_saws()  # step 12
+    hsp.open_url_saws()
     time.sleep(3)
     print("Открылась страница с бензопилами фирмы Hyundai")
 
     change_hyundai_saw_6 = Saws(driver)
-    change_hyundai_saw_6.change_saw_6()  # step 13
+    change_hyundai_saw_6.change_saw_6()
     print("Выбрали шестой товар из предложенных")
     # time.sleep(3)
 
@@ -170,6 +193,11 @@ def test_search_saws(set_up):
     s6_power = driver.find_element(By.XPATH, "(//p[@class='text-sm text-break'])[4]")  # мощность 6
     val_s6_power = s6_power.text
     print(val_s6_power)
+
+    saw_6_model_pydantic = Saws_Parameters(saw_model=s6_model_in_excel,
+                                           saw_price=val_s6_price,
+                                           saw_power=val_s6_power)
+    print(saw_6_model_pydantic)
 
     df = pd.DataFrame(dict(
         ID=['1', '2', '3', '4', '5', '6'],
